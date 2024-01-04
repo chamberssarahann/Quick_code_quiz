@@ -3,19 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
   <title>Quick Code Quiz</title>
 </head>
 <body>
   <h1>Quick Code Quiz</h1>
-  <h2>Can you handle the pressure</h2>
-  <p>You have 1 minute to answer as many question as you can. Skipping a question costs 15 seconds. You decide whether you can afford to skip! GLHF!</p>
-  <button>Start Game</button>
-  <button>Pause Game</button>
+  <button class="Start-button">Start Game</button>
   <button>Show High Scores</button>
+  <div class="time-left">Time Left:</div>
+  <div class="countdown">0</div>
+  <h2>Question</h2>
   <div class="Questions">
-    <h2>Question</h2>
   </div>
+  <button class="Answer1"></button> <br>
+  <button class="Answer2"></button> <br>
+  <button class="Answer3"></button> <br>
+  <button class="Answer4"></button> <br>
+  <div>The correct answer is: <span class="Correct-answer"></span> <br>
   <button>Submit</button>
   
+<script src="./script.js"></script>
 </body>
 </html>
