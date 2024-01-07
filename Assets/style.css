@@ -13,9 +13,6 @@ body {
   color: white;
 }
 
-.p {
-  display:none;
-}
 button:hover {
   background-color:rgb(182, 174, 174);
   color: white;
