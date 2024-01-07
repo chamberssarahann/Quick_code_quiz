@@ -9,12 +9,17 @@ var timeEl = document.querySelector(".countdown");
 
 var secondsLeft = 60;
 
+const rules = document.getElementById("rules")
+
 function startGame() {
   gameContainerEl.style.display = "block";
   scoreContainerEl.style.display = "none";
   timeDivEl.style.display = "block";
   scoresPageEl.style.display = "none";
   startAgain.style.display = "none";
+  startButton.style.display = "none"
+  rules.style.display = "none";
+
 
 
   var timerInterval = setInterval(function () {
@@ -161,6 +166,7 @@ function endGame() {
   startButton.style.display = "none";
   scoresPageEl.style.display = "none";
   startAgain.style.display = "none";
+  rules.style.display = "none";
 
 }
 
@@ -185,6 +191,7 @@ submitButton.addEventListener("click", function (e) {
   scoreContainerEl.style.display = "none";
   scoresPageEl.style.display = "block";
   startAgain.style.display = "block";
+  rules.style.display = "none";
 
 
 
@@ -193,7 +200,7 @@ submitButton.addEventListener("click", function (e) {
   // scoresDisplayEl.textContent = (`${userScore.initials} | ${userScore.score}`)
 
   savedScores.forEach(userScore => {
-    scoresDisplayEl.insertAdjacentHTML("beforeend", `<li>${userScore.initials} | ${userScore.score}</li>`)
+    scoresDisplayEl.insertAdjacentHTML("afterbegin", `<li>${userScore.initials} | ${userScore.score}</li>`)
   });
 
 });
