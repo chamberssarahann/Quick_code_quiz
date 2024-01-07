@@ -9,9 +9,13 @@
 <body>
   <h1>Quick Code Quiz</h1>
   <button class="Start-button">Start Game</button>
-  <button>Show High Scores</button>
-  <div class="time-left">Time Left:</div>
+
+  <div id="time-div">
+  <div>Time Left:</div>
   <div class="countdown">0</div>
+  </div>
+
+  <div id="Game-container">
   <h2>Question</h2>
   <div class="Questions">
   </div>
@@ -19,9 +23,25 @@
   <button class="Answer2"></button> <br>
   <button class="Answer3"></button> <br>
   <button class="Answer4"></button> <br>
-  <div>The correct answer is: <span class="Correct-answer"></span> <br>
-  <button>Submit</button>
-  
+  </div>
+
+  <div id="Scores-container">
+  <h3>Coding Quiz Complete!</h3>
+  <p>Please enter your initials</p>
+
+  <form>
+    <label for="initials">Initials:</label>
+    <input type="text" id="initials" name="initials">
+    <button id="submit">Submit</button><br><br>
+  </form>
+  </div>  
+
+ <div id="scores-page">
+  <h4>High Scores! Good job!</h4>
+  <ul id="scores-display"></ul>
+ </div> 
+
+ <button id="again">Start Again</button>
 <script src="./script.js"></script>
 </body>
 </html>

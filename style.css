@@ -1,12 +1,7 @@
 * {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.time-left {
-  display: inline-flex;
-}
-.countdown {
-  display: inline-flex;
-}
+
 
 body {
   background-color: black;
@@ -14,8 +9,30 @@ body {
 }
 
 button:hover {
-  background-color:black;
+  background-color:rgb(182, 174, 174);
   color: white;
   cursor: pointer;
-  font-size:20px;
+}
+#time-div {
+  display:none;
+}
+
+#Game-container {
+  display:none;
+}
+
+#Scores-container {
+  display:none;
+}
+
+#scores-page {
+  display:none;
+}
+
+#scores-display {
+  font: white;
+}
+
+#again {
+  display: none;
 }
