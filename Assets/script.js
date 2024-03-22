@@ -170,7 +170,7 @@ function endGame() {
 
 }
 
-const savedScores = JSON.parse(localStorage.getItem("scores")) || [];
+let savedScores = JSON.parse(localStorage.getItem("scores")) || [];
 const submitButton = document.getElementById("submit");
 
 submitButton.addEventListener("click", function (e) {
@@ -185,6 +185,10 @@ submitButton.addEventListener("click", function (e) {
 
   savedScores.push(userScore);
 
+  savedScores.sort((a, b) => b.score - a.score);
+
+  savedScores = savedScores.slice(0, 10);
+
   localStorage.setItem("scores", JSON.stringify(savedScores));
 
   submitButton.style.display = "none";
@@ -196,13 +200,13 @@ submitButton.addEventListener("click", function (e) {
 
 
   const scoresDisplayEl = document.getElementById("scores-display");
+  scoresDisplayEl.innerHTML = "";
 
   // scoresDisplayEl.textContent = (`${userScore.initials} | ${userScore.score}`)
 
-  savedScores.forEach(userScore => {
-    scoresDisplayEl.insertAdjacentHTML("afterbegin", `<li>${userScore.initials} | ${userScore.score}</li>`)
+  savedScores.forEach((userScore, index) => {
+    scoresDisplayEl.insertAdjacentHTML("beforeend", `<li>${index + 1}. ${userScore.initials} | ${userScore.score}</li>`);
   });
-
 });
 
 const startAgain = document.getElementById("again");

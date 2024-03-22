@@ -1,11 +1,99 @@
 * {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .ibm-plex mono-extralight {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .ibm-plex mono-light {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ibm-plex mono-regular {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ibm-plex mono-medium {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ibm-plex mono-semibold {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .ibm-plex mono-bold {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ibm-plex mono-thin-italic {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .ibm-plex mono-extralight-italic {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .ibm-plex mono-light-italic {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ibm-plex mono-regular-italic {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ibm-plex mono-medium-italic {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ibm-plex mono-semibold-italic {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .ibm-plex mono-bold-italic {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+
+.bungee-hairline-regular {
+    font-family: "Bungee Hairline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 72px;
 }
 
 body {
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -14,10 +102,81 @@ body {
 }
 
 button:hover {
-  background-color:rgb(182, 174, 174);
+  background-color:rgb(188, 11, 138);
   color: white;
   cursor: pointer;
 }
+
+.Start-button {
+  display: block;
+  margin: 0 auto;
+  background-color: darkslateblue;
+  color: white;
+}
+
+#submit:hover {
+  background-color: rgb(188, 11, 138);
+  color: white;
+  cursor: pointer;
+}
+
+.start-again {
+  background-color: darkslateblue;
+  color: white;
+}
+
+/* #scores-page h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+#scores-page #scores-display {
+  text-align: center; /* Center the text horizontally */
+
+.Questions {
+  margin-bottom: 10px;
+}
+
+#scores-display {
+  font: white;
+  list-style-type: none; /* Remove bullet points */
+}
+
+.Answer1 {
+  margin-bottom: 10px;
+  background-color: darkslateblue;
+  color: white;
+}
+
+.Answer2 {
+  margin-bottom: 10px;
+  background-color: darkslateblue;
+  color: white;
+}
+
+.Answer3 {
+  margin-bottom: 10px;
+  background-color: darkslateblue;
+  color: white;
+}
+
+.Answer4 {
+  margin-bottom: 10px;
+  background-color: darkslateblue;
+  color: white;
+}
+
+#submit {
+  background-color: darkslateblue;
+  color: white;
+}
+
 #time-div {
   display:none;
 }
